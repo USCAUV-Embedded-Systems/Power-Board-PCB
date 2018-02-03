@@ -4508,8 +4508,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-7.9" y1="16.4" x2="7.9" y2="16.4" width="0.127" layer="21"/>
 </package>
 <package name="POWERPOLE_PAIR_10AWG">
-<pad name="RED" x="-3.9" y="0" drill="2.8"/>
-<pad name="BLACK" x="3.9" y="0" drill="2.8"/>
+<pad name="RED" x="-3.9" y="0" drill="2.8" diameter="5.08"/>
+<pad name="BLACK" x="3.9" y="0" drill="2.8" diameter="5.08"/>
 <wire x1="-7.9" y1="3.95" x2="0" y2="3.95" width="0.127" layer="21"/>
 <wire x1="0" y1="3.95" x2="7.9" y2="3.95" width="0.127" layer="21"/>
 <wire x1="7.9" y1="3.95" x2="7.9" y2="-3.95" width="0.127" layer="21"/>
@@ -4852,8 +4852,8 @@ using ameteur radio standard layout</description>
 <wire x1="12.827" y1="-4.064" x2="12.827" y2="-1.27" width="0.127" layer="21"/>
 </package>
 <package name="W51-A152A1-PINS">
-<pad name="P1" x="-1.27" y="2.54" drill="2.54"/>
-<pad name="P2" x="-1.27" y="-3.81" drill="2.54"/>
+<pad name="P1" x="-1.27" y="2.54" drill="2.54" diameter="4.445"/>
+<pad name="P2" x="-1.27" y="-3.81" drill="2.54" diameter="4.445"/>
 </package>
 <package name="W51-A152A1-CUTOUT">
 <polygon width="0.127" layer="20">
@@ -4876,8 +4876,7 @@ using ameteur radio standard layout</description>
 <circle x="0" y="0" radius="5.08" width="0.127" layer="21"/>
 <pad name="K" x="2.54" y="0" drill="1.9304" shape="square"/>
 <pad name="A" x="-2.54" y="0" drill="1.9304" shape="octagon"/>
-<text x="6.35" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="6.35" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-3.81" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -7361,9 +7360,9 @@ Source: www.kingbright.com</description>
 </classes>
 <parts>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2" value="Killswitch"/>
+<part name="KSW" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2" value="Killswitch"/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1" value="Soft Kill"/>
+<part name="SKSW" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1" value="Soft Kill"/>
 <part name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="IRF520" device="" package3d_urn="urn:adsk.eagle:package:29484/3" value="IRLB8743PBF"/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="10K"/>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="10K"/>
@@ -7393,7 +7392,7 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="BZV10" device="" package3d_urn="urn:adsk.eagle:package:43364/1" value="BZX55B3V3-TAP"/>
 <part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="BZV10" device="" package3d_urn="urn:adsk.eagle:package:43364/1" value="BZX55B3V3-TAP"/>
-<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="SENSE" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="S1" library="Power Board Custom" deviceset="W51-A152A1-20" device=""/>
 <part name="S2" library="Power Board Custom" deviceset="W51-A152A1-20" device=""/>
 <part name="U$1" library="Power Board Custom" deviceset="W51-A152A1-20-CUTOUT" device=""/>
@@ -7421,9 +7420,9 @@ Source: www.kingbright.com</description>
 </plain>
 <instances>
 <instance part="SUPPLY1" gate="GND" x="-25.4" y="-111.76"/>
-<instance part="JP1" gate="A" x="2.54" y="45.72" rot="R180"/>
+<instance part="KSW" gate="A" x="2.54" y="45.72" rot="R180"/>
 <instance part="SUPPLY2" gate="GND" x="12.7" y="10.16"/>
-<instance part="JP2" gate="G$1" x="2.54" y="30.48" rot="R180"/>
+<instance part="SKSW" gate="G$1" x="2.54" y="30.48" rot="R180"/>
 <instance part="Q1" gate="G$1" x="165.1" y="43.18"/>
 <instance part="R1" gate="G$1" x="27.94" y="50.8" rot="R90"/>
 <instance part="R2" gate="G$1" x="22.86" y="22.86" rot="R90"/>
@@ -7456,7 +7455,7 @@ Source: www.kingbright.com</description>
 <instance part="SUPPLY6" gate="GND" x="-43.18" y="45.72"/>
 <instance part="D1" gate="1" x="-33.02" y="55.88" rot="R90"/>
 <instance part="D2" gate="1" x="-66.04" y="55.88" rot="R90"/>
-<instance part="JP3" gate="G$1" x="-10.16" y="73.66"/>
+<instance part="SENSE" gate="G$1" x="-10.16" y="73.66"/>
 <instance part="S1" gate="G$1" x="93.98" y="134.62"/>
 <instance part="S2" gate="G$1" x="93.98" y="106.68"/>
 <instance part="U$1" gate="G$1" x="17.78" y="215.9"/>
@@ -7493,7 +7492,7 @@ Source: www.kingbright.com</description>
 <pinref part="IC1" gate="D" pin="I1"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="KSW" gate="A" pin="3"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <wire x1="5.08" y1="48.26" x2="12.7" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="48.26" x2="12.7" y2="15.24" width="0.1524" layer="91"/>
@@ -7657,7 +7656,7 @@ Source: www.kingbright.com</description>
 </net>
 <net name="KILL_SIG" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="KSW" gate="A" pin="1"/>
 <wire x1="27.94" y1="43.18" x2="5.08" y2="43.18" width="0.1524" layer="91"/>
 <label x="-9.906" y="42.926" size="1.778" layer="95"/>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -7673,7 +7672,7 @@ Source: www.kingbright.com</description>
 </net>
 <net name="SOFT_KILL" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="SKSW" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="30.48" x2="17.78" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="30.48" x2="17.78" y2="33.02" width="0.1524" layer="91"/>
 <label x="-11.43" y="29.464" size="1.778" layer="95"/>
@@ -7898,7 +7897,7 @@ Source: www.kingbright.com</description>
 <junction x="236.22" y="104.14"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="KSW" gate="A" pin="2"/>
 <wire x1="5.08" y1="45.72" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
 <label x="-5.842" y="45.466" size="1.778" layer="95"/>
 <wire x1="20.32" y1="45.72" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
@@ -7919,7 +7918,7 @@ Source: www.kingbright.com</description>
 <wire x1="-55.88" y1="68.58" x2="-35.56" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="68.58" x2="-35.56" y2="76.2" width="0.1524" layer="91"/>
 <junction x="-55.88" y="68.58"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
+<pinref part="SENSE" gate="G$1" pin="1"/>
 <wire x1="-35.56" y1="76.2" x2="-12.7" y2="76.2" width="0.1524" layer="91"/>
 <label x="-7.62" y="76.2" size="1.778" layer="95"/>
 <wire x1="-55.88" y1="66.04" x2="-66.04" y2="66.04" width="0.1524" layer="91"/>
@@ -7936,7 +7935,7 @@ Source: www.kingbright.com</description>
 <wire x1="-43.18" y1="66.04" x2="-43.18" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-43.18" y1="66.04" x2="-33.02" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-43.18" y="66.04"/>
-<pinref part="JP3" gate="G$1" pin="2"/>
+<pinref part="SENSE" gate="G$1" pin="2"/>
 <wire x1="-33.02" y1="66.04" x2="-22.86" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="66.04" x2="-22.86" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="73.66" x2="-12.7" y2="73.66" width="0.1524" layer="91"/>
