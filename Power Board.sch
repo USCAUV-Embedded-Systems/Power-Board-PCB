@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.0">
+<eagle version="8.6.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -4868,16 +4868,6 @@ using ameteur radio standard layout</description>
 <wire x1="-1.27" y1="30.607" x2="14.859" y2="30.607" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-2.032" x2="14.859" y2="-2.032" width="0.127" layer="21"/>
 </package>
-<package name="SPARKFUN_10MMLED">
-<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
-10 mm, round</description>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="2.54" width="0.254" layer="21" curve="-306.869898"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="21"/>
-<circle x="0" y="0" radius="5.08" width="0.127" layer="21"/>
-<pad name="K" x="2.54" y="0" drill="1.9304" shape="square"/>
-<pad name="A" x="-2.54" y="0" drill="1.9304" shape="octagon"/>
-<text x="-3.81" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-</package>
 </packages>
 <symbols>
 <symbol name="VREG_S18V20">
@@ -4948,31 +4938,6 @@ using ameteur radio standard layout</description>
 <wire x1="2.54" y1="7.62" x2="2.54" y2="7.112" width="0.254" layer="94"/>
 <wire x1="2.54" y1="7.112" x2="-2.54" y2="7.112" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="7.112" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-</symbol>
-<symbol name="LED">
-<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
-<text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="5.715" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.429" y="-2.159"/>
-<vertex x="-3.048" y="-1.27"/>
-<vertex x="-2.54" y="-1.778"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.302" y="-3.302"/>
-<vertex x="-2.921" y="-2.413"/>
-<vertex x="-2.413" y="-2.921"/>
-</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -5085,22 +5050,6 @@ using ameteur radio standard layout</description>
 </gates>
 <devices>
 <device name="" package="W51-A152A1-CUTOUT">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SPARKFUN_10MMLED">
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SPARKFUN_10MMLED">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="K"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7400,19 +7349,11 @@ Source: www.kingbright.com</description>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/1"/>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/1" value="YEL"/>
 <part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/1" value="RED"/>
-<part name="LED5" library="Power Board Custom" deviceset="SPARKFUN_10MMLED" device="" value="YEL_10mm"/>
-<part name="LED6" library="Power Board Custom" deviceset="SPARKFUN_10MMLED" device="" value="RED_10mm"/>
-<part name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="100"/>
 <part name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="180"/>
 <part name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="100"/>
-<part name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="33"/>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="1K"/>
-<part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="220"/>
 <part name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="1K"/>
-<part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="330"/>
 <part name="LED7" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/1" value="BLU"/>
-<part name="LED8" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="10MM" package3d_urn="urn:adsk.eagle:package:15828/1" value="BLU_10mm"/>
-<part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="10MM" package3d_urn="urn:adsk.eagle:package:15828/1" value="WHITE_10mm"/>
 </parts>
 <sheets>
 <sheet>
@@ -7463,19 +7404,11 @@ Source: www.kingbright.com</description>
 <instance part="LED1" gate="G$1" x="236.22" y="165.1"/>
 <instance part="LED2" gate="G$1" x="236.22" y="132.08"/>
 <instance part="LED3" gate="G$1" x="236.22" y="93.98"/>
-<instance part="LED5" gate="G$1" x="246.38" y="132.08"/>
-<instance part="LED6" gate="G$1" x="246.38" y="93.98"/>
-<instance part="R9" gate="G$1" x="246.38" y="78.74" rot="R90"/>
 <instance part="R10" gate="G$1" x="236.22" y="81.28" rot="R90"/>
 <instance part="R11" gate="G$1" x="236.22" y="119.38" rot="R90"/>
-<instance part="R12" gate="G$1" x="246.38" y="119.38" rot="R90"/>
 <instance part="R13" gate="G$1" x="236.22" y="152.4" rot="R90"/>
-<instance part="R14" gate="G$1" x="246.38" y="152.4" rot="R90"/>
 <instance part="R15" gate="G$1" x="213.36" y="195.58" rot="R90"/>
-<instance part="R16" gate="G$1" x="223.52" y="195.58" rot="R90"/>
 <instance part="LED7" gate="G$1" x="213.36" y="208.28"/>
-<instance part="LED8" gate="G$1" x="223.52" y="208.28"/>
-<instance part="LED4" gate="G$1" x="246.38" y="165.1"/>
 </instances>
 <busses>
 </busses>
@@ -7562,25 +7495,15 @@ Source: www.kingbright.com</description>
 <label x="200.66" y="83.82" size="1.778" layer="95"/>
 <wire x1="180.34" y1="73.66" x2="236.22" y2="73.66" width="0.1524" layer="91"/>
 <junction x="180.34" y="73.66"/>
-<pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="236.22" y1="73.66" x2="246.38" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="114.3" x2="236.22" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="111.76" x2="180.34" y2="111.76" width="0.1524" layer="91"/>
 <junction x="180.34" y="111.76"/>
-<pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="246.38" y1="114.3" x2="246.38" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="111.76" x2="236.22" y2="111.76" width="0.1524" layer="91"/>
-<junction x="236.22" y="111.76"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="236.22" y1="147.32" x2="180.34" y2="147.32" width="0.1524" layer="91"/>
 <junction x="180.34" y="147.32"/>
-<pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="246.38" y1="147.32" x2="236.22" y2="147.32" width="0.1524" layer="91"/>
-<junction x="236.22" y="147.32"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="236.22" y1="76.2" x2="236.22" y2="73.66" width="0.1524" layer="91"/>
-<junction x="236.22" y="73.66"/>
 </segment>
 <segment>
 <pinref part="LOGIC_BATT" gate="G$1" pin="GND"/>
@@ -7755,10 +7678,6 @@ Source: www.kingbright.com</description>
 <wire x1="213.36" y1="218.44" x2="170.18" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="218.44" x2="170.18" y2="200.66" width="0.1524" layer="91"/>
 <junction x="170.18" y="200.66"/>
-<pinref part="LED8" gate="G$1" pin="A"/>
-<wire x1="223.52" y1="210.82" x2="223.52" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="218.44" x2="213.36" y2="218.44" width="0.1524" layer="91"/>
-<junction x="213.36" y="218.44"/>
 </segment>
 </net>
 <net name="LOG_VIN" class="0">
@@ -7809,10 +7728,6 @@ Source: www.kingbright.com</description>
 <junction x="187.96" y="167.64"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="236.22" y1="175.26" x2="236.22" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="167.64" x2="246.38" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="175.26" x2="236.22" y2="175.26" width="0.1524" layer="91"/>
-<junction x="236.22" y="175.26"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -7841,10 +7756,6 @@ Source: www.kingbright.com</description>
 <wire x1="236.22" y1="142.24" x2="182.88" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="142.24" x2="182.88" y2="134.62" width="0.1524" layer="91"/>
 <junction x="182.88" y="134.62"/>
-<pinref part="LED5" gate="G$1" pin="A"/>
-<wire x1="246.38" y1="134.62" x2="246.38" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="142.24" x2="236.22" y2="142.24" width="0.1524" layer="91"/>
-<junction x="236.22" y="142.24"/>
 </segment>
 </net>
 <net name="MOTOR_0V" class="0">
@@ -7859,10 +7770,6 @@ Source: www.kingbright.com</description>
 <wire x1="213.36" y1="182.88" x2="180.34" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="182.88" x2="180.34" y2="190.5" width="0.1524" layer="91"/>
 <junction x="180.34" y="190.5"/>
-<pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="223.52" y1="190.5" x2="223.52" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="182.88" x2="213.36" y2="182.88" width="0.1524" layer="91"/>
-<junction x="213.36" y="182.88"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -7891,10 +7798,6 @@ Source: www.kingbright.com</description>
 <wire x1="236.22" y1="104.14" x2="185.42" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="104.14" x2="185.42" y2="96.52" width="0.1524" layer="91"/>
 <junction x="185.42" y="96.52"/>
-<pinref part="LED6" gate="G$1" pin="A"/>
-<wire x1="246.38" y1="96.52" x2="246.38" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="104.14" x2="236.22" y2="104.14" width="0.1524" layer="91"/>
-<junction x="236.22" y="104.14"/>
 </segment>
 <segment>
 <pinref part="KSW" gate="A" pin="2"/>
@@ -7945,13 +7848,6 @@ Source: www.kingbright.com</description>
 <junction x="-33.02" y="66.04"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<pinref part="LED6" gate="G$1" pin="C"/>
-<wire x1="246.38" y1="83.82" x2="246.38" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
@@ -7966,13 +7862,6 @@ Source: www.kingbright.com</description>
 <wire x1="236.22" y1="127" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="LED5" gate="G$1" pin="C"/>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="246.38" y1="127" x2="246.38" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
@@ -7980,25 +7869,11 @@ Source: www.kingbright.com</description>
 <wire x1="236.22" y1="160.02" x2="236.22" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="246.38" y1="160.02" x2="246.38" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
-</segment>
-</net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="LED7" gate="G$1" pin="C"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="213.36" y1="203.2" x2="213.36" y2="200.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="223.52" y1="200.66" x2="223.52" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="LED8" gate="G$1" pin="C"/>
 </segment>
 </net>
 </nets>
