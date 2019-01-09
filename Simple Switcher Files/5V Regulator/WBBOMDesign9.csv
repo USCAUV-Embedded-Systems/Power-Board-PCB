@@ -1,0 +1,12 @@
+﻿Part,Manufacturer,Part Number,Quantity,Price ($),Footprint (mm²),Description
+Cff,Kemet,C0201C101K3GACTU,1,0.01,2.08,VDC: 10 V  Technology: NaN  Series: NaN  Package: 201   Cap: 100 pF  Total Derated Cap: 100 pF  ESR: 0 Ω  
+Rff,Vishay-Dale,CRCW080520K0FKEA,1,0.01,6.75,Tolerance: 1.0%  Resistance: 20 kΩ  Power: 125 mW  
+Rfbt,Vishay-Dale,CRCW040273K2FKED,1,0.01,3,Tolerance: 1.0%  Resistance: 73.2 kΩ  Power: 63 mW  
+Rfbb,Yageo,RC0201FR-0710KL,1,0.01,2.08,Tolerance: 1.0%  Resistance: 10 kΩ  Power: 50 mW  
+U1,Texas Instruments,TPS56637RPAR,1,1.5,16,
+Cboot,MuRata,GRM155R61C104KA88D,1,0.01,3,VDC: 16 V  Technology: NaN  Series: NaN  Package: 402   Cap: 100 nF  Total Derated Cap: 100 nF  ESR: 1 mΩ  
+Cin,TDK,C2012X5R1V156M125AC,1,0.24,6.75,VDC: 35 V  Technology: NaN  Series: NaN  Package: 805   Cap: 15 µF  Total Derated Cap: 1.4 µF  ESR: 1.67 mΩ  
+Rpg,Vishay-Dale,CRCW0402100KFKED,1,0.01,3,Tolerance: 1.0%  Resistance: 100 kΩ  Power: 63 mW  
+L1,Coilcraft,XAL5030-332MEB,1,0.63,54.45,IDC: 8.1 A  L: 3.3 µH  DCR: 21.2 mΩ  
+Cout,MuRata,GRM31CR61A476KE15L,1,0.26,10.92,VDC: 10 V  Technology: NaN  Series: NaN  Package: 1.21 k  Cap: 47 µF  Total Derated Cap: 21 µF  ESR: 3.71 mΩ  
+Cinx,MuRata,GRM188R71H104KA93D,1,0.01,4.68,VDC: 50 V  Technology: NaN  Series: NaN  Package: 603   Cap: 100 nF  Total Derated Cap: 91 nF  ESR: 1 mΩ  
