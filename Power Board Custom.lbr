@@ -3,7 +3,7 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -258,6 +258,46 @@
 <rectangle x1="2.159" y1="-6.604" x2="2.921" y2="-4.699" layer="51"/>
 <smd name="D@2" x="0" y="11.43" dx="9.652" dy="5.842" layer="1"/>
 </package>
+<package name="HSOIC-8-POWERPAD">
+<description>HSOIC-8 with PowerPad</description>
+<smd name="THERMAL" x="0" y="0" dx="3.1" dy="2.6" layer="1" rot="R90"/>
+<wire x1="-2" y1="2.5" x2="-2" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2.5" x2="2" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-2.5" x2="2" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2" y1="2.5" x2="-2" y2="2.5" width="0.127" layer="21"/>
+<smd name="1" x="-2.7" y="1.95" dx="1.55" dy="0.6" layer="1"/>
+<smd name="2" x="-2.70005" y="0.65" dx="1.55" dy="0.6" layer="1"/>
+<smd name="3" x="-2.7" y="-0.65" dx="1.55" dy="0.6" layer="1"/>
+<smd name="4" x="-2.7" y="-1.95" dx="1.55" dy="0.6" layer="1"/>
+<smd name="8" x="2.7" y="1.95" dx="1.55" dy="0.6" layer="1"/>
+<smd name="7" x="2.7" y="0.65" dx="1.55" dy="0.6" layer="1"/>
+<smd name="6" x="2.70005" y="-0.65" dx="1.55" dy="0.6" layer="1"/>
+<smd name="5" x="2.70005" y="-1.95" dx="1.55" dy="0.6" layer="1"/>
+<circle x="-2.54" y="3.175" radius="0.127" width="0.508" layer="21"/>
+<text x="-1.397" y="3.048" size="1.016" layer="25">&gt;NAME</text>
+</package>
+<package name="SRR1280">
+<description>SMD Inductor</description>
+<smd name="1" x="-3.4036" y="0" dx="2.8956" dy="5.4102" layer="1"/>
+<smd name="2" x="3.4036" y="0" dx="2.8956" dy="5.4102" layer="1"/>
+<wire x1="-6.2484" y1="6.2484" x2="-6.2484" y2="-6.2484" width="0.127" layer="21"/>
+<wire x1="-6.2484" y1="-6.2484" x2="6.2484" y2="-6.2484" width="0.127" layer="21"/>
+<wire x1="6.2484" y1="-6.2484" x2="6.2484" y2="6.2484" width="0.127" layer="21"/>
+<wire x1="6.2484" y1="6.2484" x2="-6.2484" y2="6.2484" width="0.127" layer="21"/>
+<text x="-6.35" y="7.62" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="16SVPF82M">
+<description>Panasonic SMD Polymer Capacitor</description>
+<smd name="NEG" x="0" y="1.85" dx="0.8" dy="2.3" layer="1"/>
+<smd name="POS" x="0" y="-1.85" dx="0.8" dy="2.3" layer="1"/>
+<wire x1="-2.65" y1="2.65" x2="2.65" y2="2.65" width="0.127" layer="21"/>
+<wire x1="-2.65" y1="2.65" x2="-2.65" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-2.65" x2="1.27" y2="-2.65" width="0.127" layer="21"/>
+<wire x1="2.65" y1="-1.27" x2="2.65" y2="2.65" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-2.6416" x2="-2.6416" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-2.6416" x2="2.6416" y2="-1.27" width="0.127" layer="21"/>
+<text x="-2.54" y="3.556" size="1.016" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CIRCUITBREAKER">
@@ -454,6 +494,49 @@
 <vertex x="1.27" y="0.762"/>
 <vertex x="1.27" y="-0.762"/>
 </polygon>
+</symbol>
+<symbol name="LMR33630">
+<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<text x="-12.7" y="20.32" size="1.27" layer="95">&gt;NAME</text>
+<text x="-12.7" y="17.78" size="1.27" layer="95">&gt;VALUE</text>
+<pin name="PGND" x="-17.78" y="10.16" visible="pin" length="middle"/>
+<pin name="VIN" x="-17.78" y="5.08" visible="pin" length="middle"/>
+<pin name="EN" x="-17.78" y="0" visible="pin" length="middle"/>
+<pin name="PG" x="-17.78" y="-5.08" visible="pin" length="middle"/>
+<pin name="SW" x="17.78" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="BOOT" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="VCC" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="FB" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
+</symbol>
+<symbol name="L-US">
+<description>Inductor</description>
+<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="-5.08" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="90"/>
+<text x="-1.27" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+</symbol>
+<symbol name="C-POLARIZED">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
+<wire x1="-2.4668" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.373024"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="POS" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="NEG" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<wire x1="-2.54" y1="2.286" x2="-2.54" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-3.302" y1="1.524" x2="-1.778" y2="1.524" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -737,6 +820,63 @@
 <connect gate="G$1" pin="D" pad="D@1 D@2"/>
 <connect gate="G$1" pin="G" pad="G"/>
 <connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LMR33630ADDA" prefix="U">
+<description>3A Voltage Regulator 400 KHz</description>
+<gates>
+<gate name="G$1" symbol="LMR33630" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HSOIC-8-POWERPAD">
+<connects>
+<connect gate="G$1" pin="BOOT" pad="7"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="FB" pad="5"/>
+<connect gate="G$1" pin="PG" pad="4"/>
+<connect gate="G$1" pin="PGND" pad="1 THERMAL"/>
+<connect gate="G$1" pin="SW" pad="8"/>
+<connect gate="G$1" pin="VCC" pad="6"/>
+<connect gate="G$1" pin="VIN" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SRR1280-180M">
+<description>FIXED IND 18UH 4.8A 35 MOHM SMD</description>
+<gates>
+<gate name="G$1" symbol="L-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SRR1280">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="16SVPF82M" prefix="C">
+<description>82uf SMD Polymer Capacitor</description>
+<gates>
+<gate name="G$1" symbol="C-POLARIZED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="16SVPF82M">
+<connects>
+<connect gate="G$1" pin="NEG" pad="NEG"/>
+<connect gate="G$1" pin="POS" pad="POS"/>
 </connects>
 <technologies>
 <technology name=""/>
